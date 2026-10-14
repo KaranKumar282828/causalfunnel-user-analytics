@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CausalFunnel Analytics Demo</title>
+
+  <script
+  <script
+  src="/tracker.js"
+  data-api-url="http://localhost:5000/api/events"
+></script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 20px;
+      background: #f5f7fb;
+      color: #172033;
+    }
+
+    .card {
+      padding: 28px;
+      border-radius: 12px;
+      background: white;
+      box-shadow: 0 4px 18px #00000010;
+    }
+
+    button {
+      padding: 12px 18px;
+      margin: 8px 8px 0 0;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      background: #2563eb;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <h1>Welcome to our demo store</h1>
+    <p>Interact with this page to generate analytics events.</p>
+
+    <button onclick="alert('Product added!')">
+      Add to cart
+    </button>
+
+    <button onclick="alert('Checkout clicked!')">
+      Checkout
+    </button>
+  </div>
+</body>
+</html>
