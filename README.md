@@ -1,50 +1,134 @@
-# User Analytics Dashboard
+# 📊 User Analytics Dashboard
 
-A full-stack web analytics application that captures page views and click interactions, groups activity by session, and visualizes click patterns in a React dashboard.
+**A lightweight, full-stack user analytics application that tracks user interactions and visualizes session activity and click patterns.**
 
-## Features
+Built as a full-stack engineering assignment using React, Node.js, Express, and MongoDB.
 
-- **Page-view and click tracking** using a lightweight client-side script.
-- **Session-based activity** for exploring recorded user interactions.
-- **Interaction metadata**, including available coordinates and scroll/document dimensions.
-- **Sessions dashboard** to review recorded session activity.
-- **Click heatmap** to visualize click locations and inspect interaction patterns.
-- **REST API** built with Express, organized into event, session, and heatmap routes.
-- **MongoDB persistence** using Mongoose.
+<p align="center">
+  <a href="YOUR_VERCEL_DASHBOARD_URL">🚀 Live Dashboard</a> •
+  <a href="YOUR_VERCEL_DEMO_URL/demo.html">🖱️ Try Tracking Demo</a> •
+  <a href="YOUR_VIDEO_DEMO_URL">🎬 Watch Video Demo</a>
+</p>
 
-## Technology Stack
+---
 
-| Layer | Technologies |
-|---|---|
-| Frontend | React, Vite, Tailwind CSS |
-| Backend | Node.js, Express.js |
-| Database | MongoDB, Mongoose |
-| API | REST |
+## 📌 Table of Contents
 
-## Architecture
+- [✨ Overview](#-overview)
+- [🎬 Video Demo](#-video-demo)
+- [📸 Screenshots](#-screenshots)
+- [🚀 Features](#-features)
+- [🏗️ Architecture](#️-architecture)
+- [🛠️ Tech Stack](#️-tech-stack)
+- [📂 Project Structure](#-project-structure)
+- [🔌 API Endpoints](#-api-endpoints)
+- [⚙️ Getting Started](#️-getting-started)
+- [🌐 Deployment](#-deployment)
+- [📚 Key Learnings](#-key-learnings)
 
-```text
-Tracked webpage (demo.html)
-        |
-        v
-Client tracking script (tracker.js)
-        |
-        v
-Express REST API
-  ├── /api/events
-  ├── /api/sessions
-  └── /api/heatmap
-        |
-        v
-MongoDB via Mongoose
-        |
-        v
-React dashboard
-  ├── Sessions view
-  └── Click heatmap
+## ✨ Overview
+
+The **User Analytics Dashboard** captures user interactions on a webpage and turns them into useful analytics.
+
+A lightweight tracking script records page views and click events. The backend processes and stores the collected events, while the React dashboard presents session activity and click patterns in a visual format.
+
+### 💡 What can you explore?
+
+- 👀 Page views and user interaction events
+- 🧭 Session-level activity
+- 🖱️ Click coordinates and interaction patterns
+- 🔥 Click heatmap visualization
+- 📈 Analytics data retrieved through REST APIs
+
+## 🎬 Video Demo
+
+Watch the application workflow, including event tracking and the analytics dashboard.
+
+▶️ **[Click here to watch the full video demo](YOUR_VIDEO_DEMO_URL)**
+
+<!-- Optional: Embed a video thumbnail that links to your demo.
+     Replace the thumbnail URL with a publicly accessible image. -->
+
+<p align="center">
+  <a href="YOUR_VIDEO_DEMO_URL">
+    <img src="YOUR_VIDEO_THUMBNAIL_URL" alt="Watch the User Analytics Dashboard video demo" width="720">
+  </a>
+</p>
+
+> 💡 If your video is hosted on YouTube, use its public or unlisted share link. If you use Google Drive, ensure viewers with the link have permission to watch it.
+
+## 📸 Screenshots
+
+Explore the application's main screens below.
+
+### 🗂️ 1. Sessions Dashboard
+
+View recorded sessions and explore user activity.
+
+<p align="center">
+  <img src="docs/screenshots/sessions-dashboard.png" alt="Sessions dashboard showing recorded user sessions" width="850">
+</p>
+
+### 🔥 2. Click Heatmap
+
+Visualize where users click on the tracked webpage.
+
+<p align="center">
+  <img src="docs/screenshots/click-heatmap.png" alt="Click heatmap visualizing user interaction patterns" width="850">
+</p>
+
+### 🖱️ 3. Tracking Demo
+
+Open the demo webpage and interact with its elements to generate tracking events.
+
+<p align="center">
+  <img src="docs/screenshots/tracking-demo.png" alt="Demo webpage used to capture user interactions" width="850">
+</p>
+
+> 📷 Screenshots are available directly in this repository. Click an image to view it at full size.
+
+## 🚀 Features
+
+- 📝 **Event Tracking:** Captures page views and click interactions through a tracking script.
+- 👤 **Session Analytics:** Groups recorded events into sessions for easier exploration.
+- 📍 **Interaction Metadata:** Records relevant interaction details, such as click coordinates and page dimensions, where implemented.
+- 📊 **Sessions Dashboard:** Displays session-level analytics.
+- 🔥 **Click Heatmap:** Helps visualize the distribution of recorded clicks.
+- 🔌 **REST API:** Exposes endpoints for event collection and analytics retrieval.
+- 🗄️ **Persistent Storage:** Uses MongoDB to store tracking data.
+- 🌐 **Live Deployment:** Access the deployed dashboard and tracking demo using the links above.
+
+## 🏗️ Architecture
+
+```mermaid
+flowchart TD
+    A["🖥️ Demo Webpage"] --> B["🖱️ Tracking Script"]
+    B --> C["⚙️ Express API"]
+    C --> D["🗄️ MongoDB"]
+    D --> E["📊 Analytics Dashboard"]
+    E --> F["🗂️ Sessions View"]
+    E --> G["🔥 Click Heatmap"]
 ```
 
-## Project Structure
+### 🔄 How it works
+
+1. 🖱️ A visitor interacts with the demo webpage.
+2. 📤 The tracking script sends interaction events to the backend.
+3. ⚙️ The Express API validates and processes incoming requests.
+4. 🗄️ MongoDB stores the event data.
+5. 📊 The dashboard retrieves the data and displays session activity and click patterns.
+
+## 🛠️ Tech Stack
+
+| Category | Technologies |
+|---|---|
+| 🎨 Frontend | React, Vite, Tailwind CSS |
+| ⚙️ Backend | Node.js, Express.js |
+| 🗄️ Database | MongoDB, Mongoose |
+| 🔌 Communication | REST APIs |
+| 🚀 Deployment | Vercel, Render |
+
+## 📂 Project Structure
 
 ```text
 causal-funnel-analytics/
@@ -66,45 +150,64 @@ causal-funnel-analytics/
     └── server.js
 ```
 
-## Local Setup
+## 🔌 API Endpoints
 
-### Prerequisites
+| Method | Endpoint | Purpose |
+|---|---|---|
+| GET | `/api/health` | Check API health |
+| `Implemented method` | `/api/events` | Collect tracking events |
+| GET | `/api/sessions` | Retrieve session analytics |
+| GET | `/api/heatmap` | Retrieve heatmap data |
+
+> 📝 Check the backend routes for the exact HTTP method, request body, and response format supported by each endpoint.
+
+## ⚙️ Getting Started
+
+### ✅ Prerequisites
+
 - Node.js and npm
-- A MongoDB database and connection URI
+- MongoDB connection string
+- Git
 
-### 1. Start the backend
+### 1️⃣ Clone the repository
+
+```bash
+git clone YOUR_GITHUB_REPOSITORY_URL
+cd causal-funnel-analytics
+```
+
+### 2️⃣ Configure the backend
 
 ```bash
 cd server
 npm install
 ```
 
-Create `server/.env`:
+Create a `.env` file inside `server/`:
 
 ```env
 MONGODB_URI=your_mongodb_connection_string
 PORT=5000
 ```
 
-Start the API:
+Start the backend using the development script configured in `server/package.json`:
 
 ```bash
 npm run dev
 ```
 
-Health check: `http://localhost:5000/api/health`  
-A successful response should include `status: OK`.
+Check the API health endpoint at `http://localhost:5000/api/health`.
 
-### 2. Start the frontend
+### 3️⃣ Configure the frontend
 
-Open a second terminal from the repository root:
+Open a second terminal:
 
 ```bash
 cd client
 npm install
 ```
 
-Create `client/.env`:
+Create a `.env` file inside `client/`:
 
 ```env
 VITE_API_URL=http://localhost:5000
@@ -116,41 +219,36 @@ Start the frontend:
 npm run dev
 ```
 
-Open the local URL printed by Vite.
+Open the local frontend URL printed by Vite. If the demo is served from `client/public/`, you can access it at `/demo.html`.
 
-### 3. Try the tracking demo
+## 🌐 Deployment
 
-With the API and frontend running, open the demo page and interact with it. The script is located at `client/public/tracker.js`. Confirm its configured API URL points to the backend you are running.
+The application uses separate frontend and backend deployments.
 
-## API Routes
+- 🖥️ **Frontend:** Vercel
+- ⚙️ **Backend API:** Render
+- 🗄️ **Database:** MongoDB Atlas
 
-| Route | Purpose |
-|---|---|
-| `GET /api/health` | Backend health check |
-| `/api/events` | Event collection |
-| `/api/sessions` | Session analytics |
-| `/api/heatmap` | Heatmap data |
+### 🔗 Live links
 
-The exact HTTP methods and request/response schemas are defined by the route implementation.
+- 📊 [Open Dashboard](YOUR_VERCEL_DASHBOARD_URL)
+- 🖱️ [Open Tracking Demo](YOUR_VERCEL_DEMO_URL/demo.html)
+- ⚙️ [Check Backend Health](https://causal-funnel-analytics-api.onrender.com/api/health)
+- 🎬 [Watch Video Demo](YOUR_VIDEO_DEMO_URL)
 
-## Configuration
+> ⚠️ Replace the placeholder URLs with the actual public links before publishing this README.
 
-- `MONGODB_URI` — MongoDB connection string.
-- `PORT` — backend port; defaults to `5000`.
-- `VITE_API_URL` — frontend API base URL, such as `http://localhost:5000`.
+## 📚 Key Learnings
 
-Never commit `.env` files, database credentials, or API secrets.
+- 🔹 Building a full-stack application with React and Express
+- 🔹 Designing REST API endpoints for event collection and analytics
+- 🔹 Persisting interaction data using MongoDB and Mongoose
+- 🔹 Connecting a tracking script to a backend service
+- 🔹 Presenting analytics through dashboard visualizations
+- 🔹 Deploying a frontend and backend as separate services
 
-## Production Build
+---
 
-From the repository root:
-
-```bash
-npm --prefix client run build
-```
-
-The production build is generated in `client/dist/`.
-
-## Scope
-
-The current project focuses on event collection, session exploration, and click-pattern visualization. Add deployment URLs, authentication, consent management, or additional metrics to this README only after those capabilities are implemented and verified.
+<p align="center">
+  💙 Built with React, Node.js, Express, and MongoDB
+</p>
