@@ -66,7 +66,7 @@ Explore the application's main screens below.
 View recorded sessions and explore user activity.
 
 <p align="center">
-  <img src="docs/screenshots/sessions-dashboard.png" alt="Sessions dashboard showing recorded user sessions" width="850">
+  <img src="screenshots/sessions-dashboard.png" alt="Sessions dashboard showing recorded user sessions" width="850">
 </p>
 
 ### 🔥 2. Click Heatmap
@@ -74,7 +74,15 @@ View recorded sessions and explore user activity.
 Visualize where users click on the tracked webpage.
 
 <p align="center">
-  <img src="docs/screenshots/click-heatmap.png" alt="Click heatmap visualizing user interaction patterns" width="850">
+  <img src="screenshots/click-heatmap.png" alt="Click heatmap visualizing user interaction patterns" width="850">
+</p>
+
+### 🔥 2. Heatmap Dashboard
+
+Visualize where users click on the tracked webpage.
+
+<p align="center">
+  <img src="screenshots/heatmap-dashboard.png" alt="Click heatmap visualizing user interaction patterns on dashboard" width="850">
 </p>
 
 ### 🖱️ 3. Tracking Demo
@@ -82,7 +90,7 @@ Visualize where users click on the tracked webpage.
 Open the demo webpage and interact with its elements to generate tracking events.
 
 <p align="center">
-  <img src="docs/screenshots/tracking-demo.png" alt="Demo webpage used to capture user interactions" width="850">
+  <img src="screenshots/tracking-demo.png" alt="Demo webpage used to capture user interactions" width="850">
 </p>
 
 > 📷 Screenshots are available directly in this repository. Click an image to view it at full size.
