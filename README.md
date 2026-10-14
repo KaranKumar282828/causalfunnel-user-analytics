@@ -82,7 +82,7 @@ Visualize where users click on the tracked webpage.
 Visualize where users click on the tracked webpage.
 
 <p align="center">
-  <img src="screenshots/heatmap-dashboard.png" alt="Click heatmap visualizing user interaction patterns on dashboard" width="850">
+  <img src="screenshots/heatmap dashboard.png" alt="Click heatmap visualizing user interaction patterns on dashboard" width="850">
 </p>
 
 ### 🖱️ 3. Tracking Demo
