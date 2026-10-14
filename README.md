@@ -46,16 +46,11 @@ Watch the application workflow, including event tracking and the analytics dashb
 
 ▶️ **[Click here to watch the full video demo](https://drive.google.com/file/d/14NoXoJGPevCGShztFAvO3TKRXTWsuLfc/view?usp=sharing)**
 
-<!-- Optional: Embed a video thumbnail that links to your demo.
-     Replace the thumbnail URL with a publicly accessible image. -->
-
 <p align="center">
-  <a href="YOUR_VIDEO_DEMO_URL">
-    <img src="YOUR_VIDEO_THUMBNAIL_URL" alt="Watch the User Analytics Dashboard video demo" width="720">
+  <a href="https://drive.google.com/file/d/14NoXoJGPevCGShztFAvO3TKRXTWsuLfc/view">
+    <img src="screenshots/sessions-dashboard.png" alt="Watch the User Analytics Dashboard video demo" width="720">
   </a>
 </p>
-
-> 💡 If your video is hosted on YouTube, use its public or unlisted share link. If you use Google Drive, ensure viewers with the link have permission to watch it.
 
 ## 📸 Screenshots
 
