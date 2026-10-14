@@ -238,17 +238,24 @@ The application uses separate frontend and backend deployments.
 
 > ⚠️ Replace the placeholder URLs with the actual public links before publishing this README.
 
-## 📚 Key Learnings
+## Configuration
 
-- 🔹 Building a full-stack application with React and Express
-- 🔹 Designing REST API endpoints for event collection and analytics
-- 🔹 Persisting interaction data using MongoDB and Mongoose
-- 🔹 Connecting a tracking script to a backend service
-- 🔹 Presenting analytics through dashboard visualizations
-- 🔹 Deploying a frontend and backend as separate services
+- `MONGODB_URI` — MongoDB connection string.
+- `PORT` — backend port; defaults to `5000`.
+- `VITE_API_URL` — frontend API base URL, such as `http://localhost:5000`.
 
----
+Never commit `.env` files, database credentials, or API secrets.
 
-<p align="center">
-  💙 Built with React, Node.js, Express, and MongoDB
-</p>
+## Production Build
+
+From the repository root:
+
+```bash
+npm --prefix client run build
+```
+
+The production build is generated in `client/dist/`.
+
+## Scope
+
+The current project focuses on event collection, session exploration, and click-pattern visualization. Add deployment URLs, authentication, consent management, or additional metrics to this README only after those capabilities are implemented and verified.
