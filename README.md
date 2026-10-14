@@ -7,7 +7,7 @@ Built as a full-stack engineering assignment using React, Node.js, Express, and 
 <p align="center">
   <a href="https://causalfunnel-user-analytics-jl47dt1bw-karan-kumar1.vercel.app/">🚀 Live Dashboard</a> •
   <a href="https://causalfunnel-user-analytics-jl47dt1bw-karan-kumar1.vercel.app/demo.html">🖱️ Try Tracking Demo</a> •
-  <a href="YOUR_VIDEO_DEMO_URL">🎬 Watch Video Demo</a>
+  <a href="https://drive.google.com/file/d/14NoXoJGPevCGShztFAvO3TKRXTWsuLfc/view?usp=sharing">🎬 Watch Video Demo</a>
 </p>
 
 ---
@@ -44,7 +44,7 @@ A lightweight tracking script records page views and click events. The backend p
 
 Watch the application workflow, including event tracking and the analytics dashboard.
 
-▶️ **[Click here to watch the full video demo](YOUR_VIDEO_DEMO_URL)**
+▶️ **[Click here to watch the full video demo](https://drive.google.com/file/d/14NoXoJGPevCGShztFAvO3TKRXTWsuLfc/view?usp=sharing)**
 
 <!-- Optional: Embed a video thumbnail that links to your demo.
      Replace the thumbnail URL with a publicly accessible image. -->
