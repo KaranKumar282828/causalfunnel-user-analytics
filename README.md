@@ -5,8 +5,8 @@
 Built as a full-stack engineering assignment using React, Node.js, Express, and MongoDB.
 
 <p align="center">
-  <a href="YOUR_VERCEL_DASHBOARD_URL">🚀 Live Dashboard</a> •
-  <a href="YOUR_VERCEL_DEMO_URL/demo.html">🖱️ Try Tracking Demo</a> •
+  <a href="https://causalfunnel-user-analytics-jl47dt1bw-karan-kumar1.vercel.app/">🚀 Live Dashboard</a> •
+  <a href="https://causalfunnel-user-analytics-jl47dt1bw-karan-kumar1.vercel.app/demo.html">🖱️ Try Tracking Demo</a> •
   <a href="YOUR_VIDEO_DEMO_URL">🎬 Watch Video Demo</a>
 </p>
 
